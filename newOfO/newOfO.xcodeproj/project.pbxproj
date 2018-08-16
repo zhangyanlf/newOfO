@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A49D3EFC212515A200800C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3EFB212515A200800C41 /* AppDelegate.swift */; };
-		A49D3EFE212515A200800C41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3EFD212515A200800C41 /* ViewController.swift */; };
 		A49D3F01212515A200800C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49D3EFF212515A200800C41 /* Main.storyboard */; };
 		A49D3F03212515A300800C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49D3F02212515A300800C41 /* Assets.xcassets */; };
 		A49D3F06212515A300800C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49D3F04212515A300800C41 /* LaunchScreen.storyboard */; };
@@ -16,6 +15,7 @@
 		A49D3F1C212515A300800C41 /* newOfOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3F1B212515A300800C41 /* newOfOUITests.swift */; };
 		A49D3F3A21251EF000800C41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3F3921251EF000800C41 /* HomeViewController.swift */; };
 		A49D3F3C2125202700800C41 /* UIViewLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3F3B2125202700800C41 /* UIViewLayerHelper.swift */; };
+		A49D3F3E212564DD00800C41 /* UserCenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3F3D212564DD00800C41 /* UserCenterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		A49D3EF8212515A200800C41 /* newOfO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newOfO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49D3EFB212515A200800C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A49D3EFD212515A200800C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A49D3F00212515A200800C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A49D3F02212515A300800C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A49D3F05212515A300800C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		A49D3F38212516DA00800C41 /* 上车前_LH.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "上车前_LH.m4a"; sourceTree = "<group>"; };
 		A49D3F3921251EF000800C41 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = newOfO/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		A49D3F3B2125202700800C41 /* UIViewLayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLayerHelper.swift; sourceTree = "<group>"; };
+		A49D3F3D212564DD00800C41 /* UserCenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 			children = (
 				A49D3F29212516B900800C41 /* video */,
 				A49D3EFB212515A200800C41 /* AppDelegate.swift */,
-				A49D3EFD212515A200800C41 /* ViewController.swift */,
 				A49D3F3921251EF000800C41 /* HomeViewController.swift */,
+				A49D3F3D212564DD00800C41 /* UserCenterController.swift */,
 				A49D3EFF212515A200800C41 /* Main.storyboard */,
 				A49D3F3B2125202700800C41 /* UIViewLayerHelper.swift */,
 				A49D3F02212515A300800C41 /* Assets.xcassets */,
@@ -301,8 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A49D3F3C2125202700800C41 /* UIViewLayerHelper.swift in Sources */,
-				A49D3EFE212515A200800C41 /* ViewController.swift in Sources */,
 				A49D3EFC212515A200800C41 /* AppDelegate.swift in Sources */,
+				A49D3F3E212564DD00800C41 /* UserCenterController.swift in Sources */,
 				A49D3F3A21251EF000800C41 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

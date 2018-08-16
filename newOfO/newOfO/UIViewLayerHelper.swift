@@ -17,7 +17,6 @@ class ArcView: UIView {
 //扩展
 extension UIView {
     @IBInspectable //可以在Sb中直接设置
-    
     var cornerRadius : CGFloat {
         get {
             return layer.cornerRadius
