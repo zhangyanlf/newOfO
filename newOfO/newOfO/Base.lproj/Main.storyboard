@@ -21,17 +21,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pii-CW-XS4" userLabel="Panel View" customClass="ArcView" customModule="newOfO" customModuleProvider="target">
-                                <rect key="frame" x="-188" y="392" width="750" height="750"/>
+                                <rect key="frame" x="-187.5" y="425.5" width="750" height="750"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xm4-Yd-M30">
-                                        <rect key="frame" x="368.5" y="8" width="13" height="22"/>
+                                        <rect key="frame" x="369" y="8" width="13" height="22"/>
                                         <state key="normal" image="arrowdown"/>
                                         <connections>
                                             <action selector="clickArrowbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFx-pc-9qV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9B5-4c-XEH">
-                                        <rect key="frame" x="270" y="22.5" width="210" height="210"/>
+                                        <rect key="frame" x="270" y="23" width="210" height="210"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="210" id="5xX-Pn-xhh"/>
                                             <constraint firstAttribute="width" constant="210" id="stX-tB-lTw"/>
@@ -40,6 +40,7 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="xm4-Yd-M30" firstAttribute="centerX" secondItem="Pii-CW-XS4" secondAttribute="centerX" id="250-Wm-87D"/>
                                     <constraint firstItem="9B5-4c-XEH" firstAttribute="centerY" secondItem="Pii-CW-XS4" secondAttribute="centerY" multiplier="0.34" id="cDF-kV-acg"/>
@@ -61,28 +62,104 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ukv-oM-zdj" appends="YES" id="Mqh-T7-PRZ"/>
+                                </connections>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="V33-uA-V1n" userLabel="Tabbar Stack View">
+                                <rect key="frame" x="30" y="622" width="315" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biL-dP-CfQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                        <state key="normal" image="user_center_icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kr-wu-ixy">
+                                        <rect key="frame" x="293" y="0.0" width="22" height="25"/>
+                                        <state key="normal" image="gift_icon"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aho-IY-CC1" userLabel="Postion Stack View">
+                                <rect key="frame" x="320" y="330.5" width="40" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD7-wu-xbi">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <state key="normal" image="icon_slide_usage_guild2" backgroundImage="leftBottomBackgroundImage"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="2" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giT-Sj-Xgh">
+                                        <rect key="frame" x="0.0" y="50" width="40" height="40"/>
+                                        <state key="normal" image="leftBottomImage"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="2" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.82411024310000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.63228616650000002" blue="0.27243114260000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aho-IY-CC1" secondAttribute="trailing" constant="15" id="3nT-nO-6Jo"/>
                             <constraint firstItem="Pii-CW-XS4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5QS-Ve-pzI"/>
-                            <constraint firstItem="Pii-CW-XS4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2.3" id="Xi3-oy-eAP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V33-uA-V1n" secondAttribute="trailing" constant="30" id="91X-qP-Dyu"/>
+                            <constraint firstItem="Pii-CW-XS4" firstAttribute="top" secondItem="aho-IY-CC1" secondAttribute="bottom" constant="5" id="H8w-8m-4U0"/>
+                            <constraint firstItem="V33-uA-V1n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="I2q-s0-YwI"/>
+                            <constraint firstItem="Pii-CW-XS4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2.4" id="Xi3-oy-eAP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V33-uA-V1n" secondAttribute="bottom" constant="20" id="eEa-qR-pnb"/>
                             <constraint firstItem="Pii-CW-XS4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2" id="sJ0-2l-WgU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="arrowBtn" destination="xm4-Yd-M30" id="GbC-IB-Yh8"/>
+                        <outlet property="bottomToPanelCons" destination="H8w-8m-4U0" id="jSL-pa-Adb"/>
                         <outlet property="panelView" destination="Pii-CW-XS4" id="hPF-I4-YAa"/>
+                        <outlet property="postionStackView" destination="aho-IY-CC1" id="Rut-Bo-5bf"/>
+                        <outlet property="startBtn" destination="9B5-4c-XEH" id="fNk-9w-67W"/>
+                        <outlet property="tabbarStackView" destination="V33-uA-V1n" id="5ve-yO-mCc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ukv-oM-zdj">
+                    <connections>
+                        <action selector="drag:" destination="BYZ-38-t0r" id="9su-sN-Kwx"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-438" y="102"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrowdown" width="13" height="8"/>
+        <image name="gift_icon" width="22" height="22"/>
+        <image name="icon_slide_usage_guild2" width="22" height="22"/>
+        <image name="leftBottomBackgroundImage" width="40" height="40"/>
+        <image name="leftBottomImage" width="40" height="40"/>
         <image name="start_button_bg_scan" width="190" height="190"/>
+        <image name="user_center_icon" width="25" height="25"/>
     </resources>
 </document>
