@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A47D0C272126A9AD0093CF27 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D0C262126A9AD0093CF27 /* UserCell.swift */; };
 		A49D3EFC212515A200800C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D3EFB212515A200800C41 /* AppDelegate.swift */; };
 		A49D3F01212515A200800C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49D3EFF212515A200800C41 /* Main.storyboard */; };
 		A49D3F03212515A300800C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49D3F02212515A300800C41 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A47D0C262126A9AD0093CF27 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		A49D3EF8212515A200800C41 /* newOfO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newOfO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49D3EFB212515A200800C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49D3F00212515A200800C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				A49D3F3D212564DD00800C41 /* UserCenterController.swift */,
 				A49D3EFF212515A200800C41 /* Main.storyboard */,
 				A49D3F3B2125202700800C41 /* UIViewLayerHelper.swift */,
+				A47D0C262126A9AD0093CF27 /* UserCell.swift */,
 				A49D3F02212515A300800C41 /* Assets.xcassets */,
 				A49D3F04212515A300800C41 /* LaunchScreen.storyboard */,
 				A49D3F07212515A300800C41 /* Info.plist */,
@@ -303,6 +306,7 @@
 				A49D3F3C2125202700800C41 /* UIViewLayerHelper.swift in Sources */,
 				A49D3EFC212515A200800C41 /* AppDelegate.swift in Sources */,
 				A49D3F3E212564DD00800C41 /* UserCenterController.swift in Sources */,
+				A47D0C272126A9AD0093CF27 /* UserCell.swift in Sources */,
 				A49D3F3A21251EF000800C41 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

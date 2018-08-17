@@ -8,17 +8,33 @@
 
 import UIKit
 
-class UserCenterController: UIViewController {
+class UserCenterController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
 
+    let menus = ["我的行程", "我的钱包", "邀请好友" ,"兑优惠券", "我的客服"]
+    let images = ["icon_slide_trip2", "icon_slide_wallet2", "icon_slide_invite2", "icon_slide_coupon2", "icon_slide_usage_guild2"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+        
     }
     
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.menus.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
+        cell.menuImageView.image = UIImage(named: self.images[indexPath.row])
+        cell.neunLabel.text = self.menus[indexPath.row]
+        return cell
+    }
     
 
     @IBAction func closeBtn(_ sender: Any) {
@@ -31,14 +47,6 @@ class UserCenterController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
